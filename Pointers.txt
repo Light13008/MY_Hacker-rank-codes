@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void update(int *a,int *b) {
+    // Complete this function    
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+
+    printf("%d\n%d",*pa+*pb,abs(*pa-*pb));    // this abs() is for taking the mod value i.e input -4, output 4.
+    
+    return 0;
+}
